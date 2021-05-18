@@ -8,18 +8,19 @@ edition = "2018"
 [dependencies]
 log = "0.4"
 [dev-dependencies]
-actix-http = { version = "3.0.0-beta.6", default-features = false, features = ["compress"] }
+# actix-http = { version = "3.0.0-beta.6", default-features = false, features = ["compress"] }
 actix-web = { version = "4.0.0-beta.6", default-features = false, features = ["compress"] }
-actix-web-opentelemetry = { version ="0.11.0-beta.3", features = ["metrics"] } 
-tokio = { version = "1.5", features = ["rt-multi-thread", "macros", "time", "process"] }
-actix-rt = { version = "2.2" }
+# actix-web-opentelemetry = { version ="0.11.0-beta.3", features = ["metrics"] } 
+env_logger = "0.8"
+tokio = { version = "1.6", features = ["rt-multi-thread", "macros", "time", "process"] }
+# actix-rt = { version = "2.2" }
 reqwest = "0.11" 
 opentelemetry = { version = "0.13", features = ["trace", "metrics", "rt-tokio"] } 
 opentelemetry-zipkin = { version = "0.11", features = ["reqwest-client"], default-features = false }
 opentelemetry-application-insights = {version = "0.14", features = ["reqwest-client"], default-features = false }
-tracing = "0.1"
-tracing-opentelemetry = { version = "0.12" }
-tracing-attributes = { version = "0.1" } 
-tracing-futures = { version = "0.2" }
-tracing-subscriber = "0.2"
-tracing-actix-web = "0.4.0-beta.1"
+# tracing = "0.1"
+# tracing-opentelemetry = { version = "0.12" }
+# tracing-attributes = { version = "0.1" } 
+# tracing-futures = { version = "0.2" }
+# tracing-subscriber = "0.2"
+# tracing-actix-web = "0.4.0-beta.1"
